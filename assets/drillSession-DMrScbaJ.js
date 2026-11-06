@@ -1,0 +1,1 @@
+import{f as e}from"./supabase-BGs-PFkJ.js";var t=`drill:session`;function n(n){try{sessionStorage.setItem(t,JSON.stringify(n)),e.debug(`drillSession`,`set`,{lines:n.lineOpeningIds.length})}catch(t){e.warn(`drillSession`,`set failed`,{error:String(t)})}}function r(){try{let e=sessionStorage.getItem(t);return e?JSON.parse(e):null}catch{return null}}export{n,r as t};
